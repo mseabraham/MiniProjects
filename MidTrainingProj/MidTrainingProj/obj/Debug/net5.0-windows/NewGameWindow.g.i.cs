@@ -85,7 +85,7 @@ namespace MidTrainingProj {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MidTrainingProj;V1.0.0.0;component/newgamewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MidTrainingProj;component/newgamewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\NewGameWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

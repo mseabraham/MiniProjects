@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Michael\Documents\Sparta\SpartaNew\Project\MidTrainingProj\MidTrainingProj\obj\Debug\net5.0-windows\
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidTrainingProj\MidTrainingProj\obj\Debug\net5.0-windows\
 MidTrainingProj
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Michael\Documents\Sparta\SpartaNew\Project\MidTrainingProj\MidTrainingProj\App.xaml
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidTrainingProj\MidTrainingProj\App.xaml
 5-1890994309
 
-18-1525635716
+19-389822463
 2161222718436
 LoginWindow.xaml;MainAdminWindow.xaml;MainWindow.xaml;NewGameWindow.xaml;RegisterWindow.xaml;
 
-False
+True
 

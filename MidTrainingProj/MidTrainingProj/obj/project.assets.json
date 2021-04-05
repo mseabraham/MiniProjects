@@ -5882,11 +5882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Michael\\Documents\\Sparta\\SpartaNew\\Project\\MidTrainingProj\\MidTrainingProj\\MidTrainingProj.csproj",
+      "projectUniqueName": "C:\\Users\\Michael\\Documents\\Sparta\\MiniProjects\\MidTrainingProj\\MidTrainingProj\\MidTrainingProj.csproj",
       "projectName": "MidTrainingProj",
-      "projectPath": "C:\\Users\\Michael\\Documents\\Sparta\\SpartaNew\\Project\\MidTrainingProj\\MidTrainingProj\\MidTrainingProj.csproj",
+      "projectPath": "C:\\Users\\Michael\\Documents\\Sparta\\MiniProjects\\MidTrainingProj\\MidTrainingProj\\MidTrainingProj.csproj",
       "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Michael\\Documents\\Sparta\\SpartaNew\\Project\\MidTrainingProj\\MidTrainingProj\\obj\\",
+      "outputPath": "C:\\Users\\Michael\\Documents\\Sparta\\MiniProjects\\MidTrainingProj\\MidTrainingProj\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Michael\\AppData\\Roaming\\NuGet\\NuGet.Config",

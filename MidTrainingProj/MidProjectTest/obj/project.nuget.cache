@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "a7Pbaj64tpJ1TqH8VxWlLLC11KGgsr+0lKLBWXxuxhwbMoZNWyjKEPRjLtx0CxWsIwIPCy8UJziHt1DUjS2dFA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Michael\\Documents\\Sparta\\MiniProjects\\MidTrainingProj\\MidProjectTest\\MidProjectTest.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project MidTrainingProj is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project MidTrainingProj supports: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "MidTrainingProj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

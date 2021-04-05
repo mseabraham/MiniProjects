@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MidTrainingProj.Models;
+using MidTrainingProj.Classes;
 
 namespace MidTrainingProj
 {
@@ -20,6 +21,7 @@ namespace MidTrainingProj
     /// </summary>
     public partial class NewGameWindow : Window
     {
+        private CRUD operation = new CRUD();
         public NewGameWindow()
         {
             InitializeComponent();
@@ -44,6 +46,7 @@ namespace MidTrainingProj
                     db.SaveChanges();
                 }
 
+                operation.bindGames();
                 btnCancel_Click(sender, e);
             }
               

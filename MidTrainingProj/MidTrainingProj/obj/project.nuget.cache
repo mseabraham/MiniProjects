@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HhUCIBW9Zaz7BSIlAVzjqy/869Ed3+VdIpg7DtIYsD0INmXb0HZt1ASPgdIXuY7DKO4m0DmVLr7hA+skE62Q/w==",
+  "dgSpecHash": "qve6ZM1goomzATbiIcbYP2QMRsRKixJ4GN362Rqi5KG2wvGcHGseK9kIaelBIZ4/ymcj/hcI22OcJNUJmB/DmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Michael\\Documents\\Sparta\\SpartaNew\\Project\\MidTrainingProj\\MidTrainingProj\\MidTrainingProj.csproj",
+  "projectFilePath": "C:\\Users\\Michael\\Documents\\Sparta\\MiniProjects\\MidTrainingProj\\MidTrainingProj\\MidTrainingProj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michael\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Michael\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
