@@ -66,3 +66,5 @@ C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\NewGameWindow.baml
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\RegisterWindow.baml
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\MidProjWPF.csproj.CopyComplete
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\LoginWindow.g.cs
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\LoginWindow.baml

@@ -9,6 +9,11 @@
     <Border CornerRadius="25"  Background="AntiqueWhite" Margin=" 20" >
         <StackPanel Margin=" 12">
             <Label Content="Register" Foreground="Black" FontSize="25" HorizontalAlignment="Center" FontWeight="Bold" />
+            <DockPanel>
+                <RadioButton x:Name="rbAdmin" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Right" />
+                <Label Content="Admin Account" FontSize="8" VerticalAlignment="Bottom" HorizontalContentAlignment="Right"/>
+            </DockPanel>
+            
             <Separator Margin="5"/>
             <Label Content="First Name"/>
             <TextBox x:Name="txtFName" FontSize="15"/>
@@ -25,7 +30,7 @@
             <Label Content="Re-Enter Password"/>
             <PasswordBox x:Name="txtRePass" FontSize="15" />
 
-            <Button x:Name="btnSignUp" Content="SIGN UP" Margin="2.5" />
+            <Button x:Name="btnSignUp" Content="SIGN UP" Margin="2.5" Click="BtnSignUp_Click" />
             <Label x:Name="linkLogin" Content="Already a member? Login" HorizontalAlignment="Center"/>
         </StackPanel>
     </Border>

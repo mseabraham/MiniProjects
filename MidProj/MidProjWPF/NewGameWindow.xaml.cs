@@ -21,10 +21,11 @@ namespace MidProjWPF
     /// </summary>
     public partial class NewGameWindow : Window
     {
-        private CRUD operation = new CRUD();
+        private GameCRUD operation;
         public NewGameWindow()
         {
             InitializeComponent();
+            operation = new GameCRUD();
 
         }
 

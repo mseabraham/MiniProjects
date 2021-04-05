@@ -21,7 +21,7 @@ namespace MidProjWPF
     /// </summary>
     public partial class MainAdminWindow : Window
     {
-        private CRUD operation = new CRUD();
+        private GameCRUD operation = new GameCRUD();
         private bool gameEdit;
         private string ogTitle;
         private DateTime ogRelease;
@@ -42,14 +42,14 @@ namespace MidProjWPF
             var item = (sender as ListViewItem).DataContext;
             if ((item != null) && gameEdit is false)
             {
-                operation.selected = (Game)item;
-                viewGameTitle.Text = operation.selected.GameTitle;
-                editDate.SelectedDate = operation.selected.ReleaseDate;
+                operation.SelectedGame = (Game)item;
+                viewGameTitle.Text = operation.SelectedGame.GameTitle;
+                editDate.SelectedDate = operation.SelectedGame.ReleaseDate;
                 //---need to do the platform and developers
-                tbRating.Text = operation.selected.Rating.ToString();
+                tbRating.Text = operation.SelectedGame.Rating.ToString();
 
                 //Select star image
-                switch (operation.selected.Rating)
+                switch (operation.SelectedGame.Rating)
                 {
                     case 1:
                         imgStar.Source = new BitmapImage(new Uri(@"\Images\Star_rating_1_of_5.png"));
@@ -98,11 +98,11 @@ namespace MidProjWPF
             DateTime newDate = editDate.SelectedDate.Value;
             if (((e.Source as Button).Content.ToString()).Contains("Save"))
             {
-                if (newTitle != operation.selected.GameTitle)
+                if (newTitle != operation.SelectedGame.GameTitle)
                 {
                     operation.UpdateGame(newTitle);
                 }
-                if ((newTitle != operation.selected.GameTitle) && (newDate != operation.selected.ReleaseDate))
+                if ((newTitle != operation.SelectedGame.GameTitle) && (newDate != operation.SelectedGame.ReleaseDate))
                 {
                     operation.UpdateGame(viewGameTitle.Text, editDate.SelectedDate.Value);
                 }

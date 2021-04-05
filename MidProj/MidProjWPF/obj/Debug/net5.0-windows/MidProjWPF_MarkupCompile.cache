@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\App.xaml
-4-267295493
+5-1890994309
 
-61180538068
+7569232077
 216-748211535
-MainAdminWindow.xaml;MainWindow.xaml;NewGameWindow.xaml;RegisterWindow.xaml;
+LoginWindow.xaml;MainAdminWindow.xaml;MainWindow.xaml;NewGameWindow.xaml;RegisterWindow.xaml;
 
 False
 
