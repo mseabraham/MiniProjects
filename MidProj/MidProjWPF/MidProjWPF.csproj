@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Star_rating_0_of_5.png" />
+    <None Remove="Images\Star_rating_1_of_5.png" />
+    <None Remove="Images\Star_rating_2_of_5.png" />
+    <None Remove="Images\Star_rating_3_of_5.png" />
+    <None Remove="Images\Star_rating_4_of_5.png" />
+    <None Remove="Images\Star_rating_5_of_5.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MidProjData\MidProjClasses.csproj" />
+    <ProjectReference Include="..\MidProj\MidProjData.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Star_rating_0_of_5.png" />
+    <Resource Include="Images\Star_rating_1_of_5.png" />
+    <Resource Include="Images\Star_rating_2_of_5.png" />
+    <Resource Include="Images\Star_rating_3_of_5.png" />
+    <Resource Include="Images\Star_rating_4_of_5.png" />
+    <Resource Include="Images\Star_rating_5_of_5.png" />
+  </ItemGroup>
+
+</Project>

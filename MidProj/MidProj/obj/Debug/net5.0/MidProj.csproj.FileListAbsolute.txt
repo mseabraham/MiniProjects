@@ -1,0 +1,15 @@
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.csprojAssemblyReference.cache
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.AssemblyInfoInputs.cache
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.AssemblyInfo.cs
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProj.deps.json
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProj.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\ref\MidProj.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProj.pdb
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\ref\MidProj.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.pdb
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProj.runtimeconfig.json
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProj.runtimeconfig.dev.json
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProj.genruntimeconfig.cache

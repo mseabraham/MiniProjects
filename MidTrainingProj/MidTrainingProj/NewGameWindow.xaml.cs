@@ -46,7 +46,7 @@ namespace MidTrainingProj
                     db.SaveChanges();
                 }
 
-                operation.bindGames();
+                operation.BindGames();
                 btnCancel_Click(sender, e);
             }
               

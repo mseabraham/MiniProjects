@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace MidTrainingProj.Models
+namespace MidTrainingProj
 {
     public partial class GamePlatform
     {

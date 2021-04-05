@@ -1,0 +1,14 @@
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProjData.deps.json
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProjData.runtimeconfig.json
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProjData.runtimeconfig.dev.json
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProjData.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\ref\MidProjData.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\bin\Debug\net5.0\MidProjData.pdb
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProjData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProjData.AssemblyInfoInputs.cache
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProjData.AssemblyInfo.cs
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProjData.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProjData.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\ref\MidProjData.dll
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProjData.pdb
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProj\obj\Debug\net5.0\MidProjData.genruntimeconfig.cache
