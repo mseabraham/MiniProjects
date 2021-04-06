@@ -130,5 +130,12 @@ namespace MidProjWPF
             window.ShowDialog();
 
         }
+
+        private void BtnEditPlatform_Click(object sender, RoutedEventArgs e)
+        {
+            EditPlatformWindow window = new EditPlatformWindow();
+            window.ShowDialog();
+
+        }
     }
 }

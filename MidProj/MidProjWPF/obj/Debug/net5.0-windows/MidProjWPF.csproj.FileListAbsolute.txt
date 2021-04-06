@@ -72,3 +72,5 @@ C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditPlatformWindow.g.cs
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditDevelopersWindow.baml
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditPlatformWindow.baml
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditUserWindow.g.cs
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditUserWindow.baml
