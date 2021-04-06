@@ -68,3 +68,7 @@ C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\MidProjWPF.csproj.CopyComplete
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\LoginWindow.g.cs
 C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\LoginWindow.baml
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditDevelopersWindow.g.cs
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditPlatformWindow.g.cs
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditDevelopersWindow.baml
+C:\Users\Michael\Documents\Sparta\MiniProjects\MidProj\MidProjWPF\obj\Debug\net5.0-windows\EditPlatformWindow.baml

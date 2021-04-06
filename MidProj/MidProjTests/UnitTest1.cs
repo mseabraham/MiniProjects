@@ -1,7 +1,7 @@
-using NUnit.Framework;
-using System.Linq;
 using MidProjClasses;
 using MidProjData;
+using NUnit.Framework;
+using System.Linq;
 
 namespace MidProjTests
 {
@@ -25,17 +25,17 @@ namespace MidProjTests
                 db.SaveChanges();
             }
         }
-        /*
+        
         [Test]
         public void WhenANewCustomerIsAdded_TheNumberOfCustemersIncreasesBy1()
         {
             using (var db = new Gam3Sp0tContext())
             {
                 var numberOfUsersBefore = db.Users.Count();
-                operations.Create("FRY", "Phillip", "Fry", "testPass");
-                var numberOfCustomersAfter = db.Customers.Count();
+                operations.CreateUser("FRY", "Phillip", "Fry", "testPass", false);
+                var numberOfUsersAfter = db.Users.Count();
 
-                Assert.AreEqual(numberOfCustomersBefore + 1, numberOfCustomersAfter);
+                Assert.AreEqual(numberOfUsersBefore + 1, numberOfUsersAfter);
             }
         }
 
@@ -44,12 +44,12 @@ namespace MidProjTests
         {
             using (var db = new Gam3Sp0tContext())
             {
-                _customerManager.Create("MAND", "Nish Mandal", "Sparta Global", "Paris");
+                operations.CreateUser("FRY", "Phillip", "Fry", "testPass", false);
 
-                _customerManager.Update("MAND", "Nish Mandal", "Birmingham", null, null);
+                operations.Update("FRY", "Bender", "Fry");
 
-                var updatedCustomer = db.Customers.Find("MAND");
-                Assert.AreEqual("Birmingham", updatedCustomer.City);
+                var updatedCustomer = db.Users.Find("FRY");
+                Assert.AreEqual("Bender", updatedCustomer.FirstName);
             }
         }
 
@@ -58,15 +58,15 @@ namespace MidProjTests
         {
             using (var db = new Gam3Sp0tContext())
             {
-                var selectedCustomers =
-                from c in db.Customers
-                where c.CustomerId == "MAND"
+                var selectedUser =
+                from c in db.Users
+                where c.Username == "FRY"
                 select c;
 
-                db.Customers.RemoveRange(selectedCustomers);
+                db.Users.RemoveRange(selectedUser);
                 db.SaveChanges();
             }
         }
-        */
+        
     }
 }

@@ -52,19 +52,19 @@ namespace MidProjWPF
                 switch (operation.SelectedGame.Rating)
                 {
                     case 1:
-                        imgStar.Source = new BitmapImage(new Uri(@"\Images\Star_rating_1_of_5.png"));
+                        imgStar.Source = new BitmapImage(new Uri(@"Images/Star_rating_1_of_5.png", UriKind.Relative));
                         break;
                     case 2:
-                        imgStar.Source = new BitmapImage(new Uri(@"\Images\Star_rating_2_of_5.png"));
+                        imgStar.Source = new BitmapImage(new Uri(@"Images/Star_rating_2_of_5.png", UriKind.Relative));
                         break;
                     case 3:
-                        imgStar.Source = new BitmapImage(new Uri(@"\Images\Star_rating_3_of_5.png"));
+                        imgStar.Source = new BitmapImage(new Uri(@"Images/Star_rating_3_of_5.png", UriKind.Relative));
                         break;
                     case 4:
-                        imgStar.Source = new BitmapImage(new Uri(@"\Images\Star_rating_4_of_5.png"));
+                        imgStar.Source = new BitmapImage(new Uri(@"Images/Star_rating_4_of_5.png", UriKind.Relative));
                         break;
                     case 5:
-                        imgStar.Source = new BitmapImage(new Uri(@"\Images\Star_rating_5_of_5.png"));
+                        imgStar.Source = new BitmapImage(new Uri(@"Images/Star_rating_5_of_5.png", UriKind.Relative));
                         break;
 
                 }
@@ -98,14 +98,8 @@ namespace MidProjWPF
             DateTime newDate = editDate.SelectedDate.Value;
             if (((e.Source as Button).Content.ToString()).Contains("Save"))
             {
-                if (newTitle != operation.SelectedGame.GameTitle)
-                {
-                    operation.UpdateGame(newTitle);
-                }
-                if ((newTitle != operation.SelectedGame.GameTitle) && (newDate != operation.SelectedGame.ReleaseDate))
-                {
-                    operation.UpdateGame(viewGameTitle.Text, editDate.SelectedDate.Value);
-                }
+                operation.UpdateGame(viewGameTitle.Text, editDate.SelectedDate.Value);
+              
                 // RELOAD LIST VIEW WITH UPDATED GAME
                 lvGameSelection.ItemsSource = null;
                 lvGameSelection.ItemsSource = operation.gameFill;
@@ -128,6 +122,13 @@ namespace MidProjWPF
             //Disable editing for date and title
             editDate.Focusable = false;
             viewGameTitle.IsReadOnly = true;
+        }
+
+        private void BtnEditDeveloper_Click(object sender, RoutedEventArgs e)
+        {
+            EditDevelopersWindow window = new EditDevelopersWindow();
+            window.ShowDialog();
+
         }
     }
 }

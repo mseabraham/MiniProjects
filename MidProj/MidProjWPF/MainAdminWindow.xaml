@@ -78,8 +78,10 @@
 
             <DockPanel Grid.Row="1">
                 <Button x:Name="btnAddGame" Content="Add New Game" DockPanel.Dock="Left" Margin="5" Click="BtnAddGame_Click" />
-                <Button x:Name="btnAddDeveloper" Content="Edit Developers" DockPanel.Dock="Left"  Margin="5"/>
-                <Button x:Name="btnAddAdmin" Content="Add New Admin" DockPanel.Dock="Left" Margin="5" />
+                <Button x:Name="btnAddDeveloper" Content="Edit Developers" DockPanel.Dock="Left"  Margin="5" Click="BtnEditDeveloper_Click"/>
+                <Button x:Name="btnAddPlatform" Content="Edit Platforms" DockPanel.Dock="Left" Margin="5" Click="BtnEditPlatform_Click"/>
+                <Button x:Name="btnAddAdmin" Content="Add New Admin" DockPanel.Dock="Left" Margin="5"/>
+                <Button x:Name="btnEditUser" Content="Edit User Details" DockPanel.Dock="Left" Margin="5"/>
             </DockPanel>
 
             <DockPanel Margin="5" LastChildFill="True" Grid.Row="2">

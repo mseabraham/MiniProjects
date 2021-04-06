@@ -85,7 +85,7 @@ namespace MidProjWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MidProjWPF;V1.0.0.0;component/newgamewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MidProjWPF;component/newgamewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\NewGameWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

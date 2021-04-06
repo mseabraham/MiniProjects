@@ -37,7 +37,7 @@ namespace MidProjWPF
             {
                 if ((txtFName.Text != "") && (txtLName.Text != "") && (txtUsername.Text != "") && (txtPassword.Password != ""))
                 {
-                    userCRUD.Create(txtFName.Text, txtLName.Text, txtUsername.Text, txtPassword.Password, createAdmin);
+                    userCRUD.CreateUser(txtUsername.Text, txtFName.Text, txtLName.Text, txtPassword.Password, createAdmin);
 
                     MessageBoxResult result = MessageBox.Show("Account Created!",
                                           "Confirmation",
@@ -45,10 +45,8 @@ namespace MidProjWPF
                     if (result == MessageBoxResult.OK)
                     {
                         //Go to login screen
-                        LoginWindow window = new LoginWindow();
-                        Application.Current.MainWindow.Close();
-                        Application.Current.MainWindow = window;
-                        Application.Current.MainWindow.Show();
+                        RegisterWindow regWindow = this;
+                        regWindow.Close();
                     }
                 }
             }

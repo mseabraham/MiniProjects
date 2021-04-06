@@ -14,8 +14,8 @@
             <TextBox x:Name="txtUsername" FontSize="15"/>
             <Label Content="Password"/>
             <PasswordBox x:Name="txtPassword" FontSize="15" />
-            <Button x:Name="btnLogin" Content="LOGIN" Margin="0,30" />
-            <Button x:Name="btnRegister" Content="REGISTER" />
+            <Button x:Name="btnLogin" Content="LOGIN" Margin="0,30" Click="BtnLogin_Click" />
+            <Button x:Name="btnRegister" Content="REGISTER" Click="BtnRegister_Click" />
         </StackPanel>
     </Border>
 </Window>
