@@ -10,7 +10,7 @@
         <StackPanel Margin=" 12">
             <Label Content="Register" Foreground="Black" FontSize="25" HorizontalAlignment="Center" FontWeight="Bold" />
             <DockPanel>
-                <RadioButton x:Name="rbAdmin" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Right" />
+                <RadioButton x:Name="rbAdmin" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Right" IsChecked="True"/>
                 <Label Content="Admin Account" FontSize="8" VerticalAlignment="Bottom" HorizontalContentAlignment="Right"/>
             </DockPanel>
             
