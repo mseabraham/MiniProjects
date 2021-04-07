@@ -20,7 +20,7 @@ Create a foundtion for the project. This sould include the 3 layer structure
 been setup with a project board.
 
 ###### Sprint Output (DONE)
-![Login Flow](DocImages/Sprint1_done.png)
+![Login Flow](DocImages/Sprint1_done.PNG)
 
 *Above is a snapshot of the completed tasks and user stories completed in sprint 1.*
 
@@ -79,7 +79,7 @@ to apply to new games. Admins also have user management controls.
 
 ### User Guide
 ###### Authentication Flow
-![Login Flow](DocImages/Login_Flow_ss.png)
+![Login Flow](DocImages/Login_Flow_ss.PNG)
 
 *Screenshots of the login and registration page (This is the first view displayed
 when the project starts up).*
@@ -94,7 +94,7 @@ create an account and be returned to the Login window.
 - **1.5** Complete steps 1.2 to be authenticated.
 
 ###### Main Flow (Admin)
-![Main Flow](DocImages/Main_Flow_ss.png)
+![Main Flow](DocImages/Main_Flow_ss.PNG)
 
 *Screenshots of the main page in `Admin Mode` during `Game Edit`(This is the 
 first view displayed when the authentication is successful).*
