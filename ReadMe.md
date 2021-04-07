@@ -79,7 +79,7 @@ to apply to new games. Admins also have user management controls.
 
 ### User Guide
 ###### Authentication Flow
-![Login Flow](DocImages/Login_Flow_ss.PNG)
+![Login Flow](DocImages/Login_flow_ss.png)
 
 *Screenshots of the login and registration page (This is the first view displayed
 when the project starts up).*
@@ -94,7 +94,7 @@ create an account and be returned to the Login window.
 - **1.5** Complete steps 1.2 to be authenticated.
 
 ###### Main Flow (Admin)
-![Main Flow](DocImages/Main_Flow_ss.PNG)
+![Main Flow](DocImages/Main_flow_ss.png)
 
 *Screenshots of the main page in `Admin Mode` during `Game Edit`(This is the 
 first view displayed when the authentication is successful).*
