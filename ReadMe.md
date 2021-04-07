@@ -55,6 +55,10 @@ also required along with some code cleaning and refactoring.
 
 **Action plan:** 
 
+
+### Kanban Board Screenshot
+![Login Flow](DocImages/Kanban.PNG)
+
 ### Project Description
 Gam3 Sp0t is a program designed to provide a community platform for users to view game
 details and post and view reviews. Users can create new accounts with different 
