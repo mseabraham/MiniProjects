@@ -21,7 +21,8 @@ namespace MidProjWPF
     /// </summary>
     public partial class MainAdminWindow : Window
     {
-        private GameCRUD operation = new GameCRUD();
+        private GameCRUD operation;
+        public List<Game> gameFill;
         private bool gameEdit;
         private string ogTitle;
         private DateTime ogRelease;
@@ -30,9 +31,17 @@ namespace MidProjWPF
         {
             InitializeComponent();
             gameEdit = false;
-            operation.BindGames();
-            // LOAD THE LIST VIEW WITH RETRIEVED GAMES
-            lvGameSelection.ItemsSource = operation.gameFill;
+            gameFill = new List<Game>();
+            operation = new GameCRUD();
+            PopulateGameListView();
+
+        }
+
+        public void PopulateGameListView()
+        {
+            gameFill.Clear();
+            gameFill = operation.GetGames();
+            lvGameSelection.ItemsSource = gameFill;
 
         }
 
@@ -136,6 +145,22 @@ namespace MidProjWPF
             EditPlatformWindow window = new EditPlatformWindow();
             window.ShowDialog();
 
+        }
+
+        private void BtnDeleteGame_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to delete this game?",
+                                         "Confirmation",
+                                         MessageBoxButton.YesNo,
+                                         MessageBoxImage.Warning);
+            if (result == MessageBoxResult.Yes)
+            {
+                operation.DeleteGame();
+                PopulateGameListView();
+                gameEdit = false;
+                gameGrid.Visibility = Visibility.Hidden;
+                
+            }
         }
     }
 }

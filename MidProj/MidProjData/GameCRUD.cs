@@ -7,7 +7,7 @@ namespace MidProjClasses
 {
     public class GameCRUD
     {
-        
+
         public List<Game> gameFill = new List<Game>();
         public Game SelectedGame { get; set; }
         public Developer SelectedDev { get; set; }
@@ -49,7 +49,14 @@ namespace MidProjClasses
                 }
             }
         }
-        
+        public List<Game> GetGames()
+        {
+            using (var db = new Gam3Sp0tContext())
+            {
+                return db.Games.ToList();
+            }
+
+        }
         public List<Developer> GetDevelopers()
         {
             using (var db = new Gam3Sp0tContext())
@@ -82,8 +89,18 @@ namespace MidProjClasses
             BindGames();
 
         }
-        
+
         //DELETE
+        public void DeleteGame()
+        {
+            using (var db = new Gam3Sp0tContext())
+            {
+                var deleteGame = db.Games.Find(SelectedGame.GameId);
+                db.Games.RemoveRange(deleteGame);
+                db.SaveChanges();
+            }
+        }
+
         public void DeleteDeveloper()
         {
             using (var db = new Gam3Sp0tContext())

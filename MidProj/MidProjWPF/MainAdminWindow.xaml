@@ -51,10 +51,13 @@
 
             <StackPanel Grid.Row="5">
                 <Button x:Name="btnEditGame" Content="Edit Game Details" DockPanel.Dock="Left"  Margin="5" Click="BtnEditGame_Click" />
-                <DockPanel x:Name="inEdit" Visibility="Hidden">
-                    <Button x:Name="btnSaveEdit" Content="Save Edit"  HorizontalAlignment="Left"  Margin="5" Click="BtnEditDone_Click"/>
-                    <Button x:Name="btnCancelEdit" Content="Cancel Edit" HorizontalAlignment="Right" Margin="5"  Click="BtnEditDone_Click"/>
-                </DockPanel>
+                <StackPanel x:Name="inEdit" Visibility="Hidden">
+                    <DockPanel>
+                        <Button x:Name="btnSaveEdit" Content="Save Edit"  HorizontalAlignment="Left"  Margin="5" Click="BtnEditDone_Click"/>
+                        <Button x:Name="btnDeleteGame" Content="Delete Game" HorizontalAlignment="Right" Margin="5" Click="BtnDeleteGame_Click" />
+                    </DockPanel>
+                    <Button x:Name="btnCancelEdit" Content="Cancel Edit" DockPanel.Dock="Left"  Margin="5"  Click="BtnEditDone_Click"/>
+                </StackPanel>
             </StackPanel>
 
         </Grid>

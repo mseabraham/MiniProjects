@@ -67,9 +67,6 @@ namespace MidProjClasses
             }
         }
 
-        public void SetSelectedCustomer(object selectedItem)
-        {
-            SelectedUser = (User)selectedItem;
-        }
+        
     }
 }
