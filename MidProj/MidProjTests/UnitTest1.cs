@@ -10,15 +10,6 @@ namespace MidProjTests
         UserCRUD operations;
 
         //UNHAPPY paths test
-        //User stories as gerki syntax
-
-        //Project board
-        //One user story
-        //Two acceptance criterias
-
-        //User Gudie
-        //How it can be used
-        //No long blocks of tests, just bullet points
         [SetUp]
         public void Setup()
         {
@@ -58,7 +49,7 @@ namespace MidProjTests
 
                 operations.Update("FRY", "Bender", "Fry");
 
-                var updatedCustomer = db.Users.Find("FRY");
+                var updatedCustomer = db.Users.Where(u => u.Username == "Fry").FirstOrDefault();
                 Assert.AreEqual("Bender", updatedCustomer.FirstName);
             }
         }

@@ -28,13 +28,15 @@ namespace MidProjClasses
             {
                 SelectedUser = db.Users.Where(u => u.Username == username).FirstOrDefault();
 
-                if (SelectedUser.Password == password)
-                {
-                    //sets logged in
-                    LoggedIn = SelectedUser;
-                    return LoggedIn;
-                }
-                else return null;
+                if (SelectedUser is not null) {
+                    if (SelectedUser.Password == password)
+                    {
+                        //sets logged in
+                        LoggedIn = SelectedUser;
+                        return LoggedIn;
+                    }
+                    else return null;
+                } else return null;
                 
             }
         }
