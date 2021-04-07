@@ -57,7 +57,7 @@ also required along with some code cleaning and refactoring.
 
 
 ### Kanban Board Screenshot
-![Login Flow](DocImages/Kanban.png)
+![Kanban Board](DocImages/Kanban.PNG)
 
 ### Project Description
 Gam3 Sp0t is a program designed to provide a community platform for users to view game
