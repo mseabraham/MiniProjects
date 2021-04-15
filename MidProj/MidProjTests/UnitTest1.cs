@@ -7,13 +7,13 @@ namespace MidProjTests
 {
     public class Tests
     {
-        UserCRUD operations;
+        private UserCRUD _operations;
 
         //UNHAPPY paths test
         [SetUp]
         public void Setup()
         {
-            operations = new UserCRUD();
+            _operations = new UserCRUD();
             // remove test entry in DB if present
             using (var db = new Gam3Sp0tContext())
             {
@@ -33,7 +33,7 @@ namespace MidProjTests
             using (var db = new Gam3Sp0tContext())
             {
                 var numberOfUsersBefore = db.Users.Count();
-                operations.CreateUser("FRY", "Phillip", "Fry", "testPass", false);
+                _operations.CreateUser("FRY", "Phillip", "Fry", "testPass", false);
                 var numberOfUsersAfter = db.Users.Count();
 
                 Assert.AreEqual(numberOfUsersBefore + 1, numberOfUsersAfter);
@@ -45,9 +45,9 @@ namespace MidProjTests
         {
             using (var db = new Gam3Sp0tContext())
             {
-                operations.CreateUser("FRY", "Phillip", "Fry", "testPass", false);
+                _operations.CreateUser("FRY", "Phillip", "Fry", "testPass", false);
 
-                operations.Update("FRY", "Bender", "Fry");
+                _operations.Update("FRY", "Bender", "Fry");
 
                 var updatedCustomer = db.Users.Where(u => u.Username == "Fry").FirstOrDefault();
                 Assert.AreEqual("Bender", updatedCustomer.FirstName);

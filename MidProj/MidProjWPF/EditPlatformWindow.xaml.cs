@@ -21,19 +21,19 @@ namespace MidProjWPF
     /// </summary>
     public partial class EditPlatformWindow : Window
     {
-        private List<Platform> platforms;
-        public GameCRUD game;
+        private List<Platform> _platforms;
+        public GameCRUD _game;
         public EditPlatformWindow()
         {
             InitializeComponent();
-            game = new GameCRUD();
+            _game = new GameCRUD();
             PopulateListView();
         }
 
         public void PopulateListView()
         {
-            platforms = game.GetPlatforms();
-            lvPlatforms.ItemsSource = platforms;
+            _platforms = _game.GetPlatforms();
+            lvPlatforms.ItemsSource = _platforms;
 
         }
 
@@ -42,10 +42,10 @@ namespace MidProjWPF
             var item = (sender as ListViewItem).DataContext;
             if (item != null)
             {
-                game.SelectedPlat = (Platform)item;
-                txtSelectOne.Text = (game.SelectedPlat.PlatformId).ToString();
-                txtSelectTwo.Text = game.SelectedPlat.PlatformName;
-                txtSelectThree.Text = game.SelectedPlat.Brand;
+                _game.SelectedPlat = (Platform)item;
+                txtSelectOne.Text = (_game.SelectedPlat.PlatformId).ToString();
+                txtSelectTwo.Text = _game.SelectedPlat.PlatformName;
+                txtSelectThree.Text = _game.SelectedPlat.Brand;
             }
         }
 
@@ -53,7 +53,7 @@ namespace MidProjWPF
         {
             if ((txtAddOne.Text != null) & (txtAddTwo.Text != null))
             {
-                game.CreatePlatform(txtAddOne.Text, txtAddTwo.Text);
+                _game.CreatePlatform(txtAddOne.Text, txtAddTwo.Text);
                 txtAddOne.Clear();
                 txtAddTwo.Clear();
                 lvPlatforms.ItemsSource = null;
@@ -69,7 +69,7 @@ namespace MidProjWPF
                                          MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                game.DeletePlatform();
+                _game.DeletePlatform();
                 txtSelectOne.Clear();
                 txtSelectTwo.Clear();
                 PopulateListView();

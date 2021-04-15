@@ -7,7 +7,7 @@ namespace MidProjClasses
 {
     public class GameCRUD
     {
-
+        
         public List<Game> gameFill = new List<Game>();
         public Game SelectedGame { get; set; }
         public Developer SelectedDev { get; set; }

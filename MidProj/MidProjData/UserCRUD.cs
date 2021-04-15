@@ -1,8 +1,6 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MidProjData;
 
 namespace MidProjClasses
@@ -52,11 +50,6 @@ namespace MidProjClasses
                 // write changes to database
                 db.SaveChanges();
             }
-        }
-
-        public void Delete()
-        {
-
         }
 
         public List<User> RetrieveAll()

@@ -21,27 +21,27 @@ namespace MidProjWPF
     /// </summary>
     public partial class MainAdminWindow : Window
     {
-        private GameCRUD operation;
-        public List<Game> gameFill;
-        private bool gameEdit;
-        private string ogTitle;
-        private DateTime ogRelease;
+        private GameCRUD _operation;
+        public List<Game> _gameFill;
+        private bool _gameEdit;
+        private string _ogTitle;
+        private DateTime _ogRelease;
 
         public MainAdminWindow()
         {
             InitializeComponent();
-            gameEdit = false;
-            gameFill = new List<Game>();
-            operation = new GameCRUD();
+            _gameEdit = false;
+            _gameFill = new List<Game>();
+            _operation = new GameCRUD();
             PopulateGameListView();
 
         }
 
         public void PopulateGameListView()
         {
-            gameFill.Clear();
-            gameFill = operation.GetGames();
-            lvGameSelection.ItemsSource = gameFill;
+            _gameFill.Clear();
+            _gameFill = _operation.GetGames();
+            lvGameSelection.ItemsSource = _gameFill;
 
         }
 
@@ -49,16 +49,16 @@ namespace MidProjWPF
         {
             if (gameGrid.Visibility != Visibility.Visible) gameGrid.Visibility = Visibility.Visible;
             var item = (sender as ListViewItem).DataContext;
-            if ((item != null) && gameEdit is false)
+            if ((item != null) && _gameEdit is false)
             {
-                operation.SelectedGame = (Game)item;
-                viewGameTitle.Text = operation.SelectedGame.GameTitle;
-                editDate.SelectedDate = operation.SelectedGame.ReleaseDate;
+                _operation.SelectedGame = (Game)item;
+                viewGameTitle.Text = _operation.SelectedGame.GameTitle;
+                editDate.SelectedDate = _operation.SelectedGame.ReleaseDate;
                 //---need to do the platform and developers
-                tbRating.Text = operation.SelectedGame.Rating.ToString();
+                tbRating.Text = _operation.SelectedGame.Rating.ToString();
 
                 //Select star image
-                switch (operation.SelectedGame.Rating)
+                switch (_operation.SelectedGame.Rating)
                 {
                     case 1:
                         imgStar.Source = new BitmapImage(new Uri(@"Images/Star_rating_1_of_5.png", UriKind.Relative));
@@ -88,13 +88,13 @@ namespace MidProjWPF
         private void BtnEditGame_Click(object sender, RoutedEventArgs e)
         {
             //Store values current values for retrival
-            gameEdit = true;
-            ogTitle = viewGameTitle.Text;
-            ogRelease = editDate.SelectedDate.Value;
+            _gameEdit = true;
+            _ogTitle = viewGameTitle.Text;
+            _ogRelease = editDate.SelectedDate.Value;
 
             //Hide edit button and show save and cancel
-            inEdit.Visibility = System.Windows.Visibility.Visible;
-            btnEditGame.Visibility = System.Windows.Visibility.Hidden;
+            inEdit.Visibility = Visibility.Visible;
+            btnEditGame.Visibility = Visibility.Hidden;
 
             //Allow editing for date and title
             editDate.Focusable = true;
@@ -107,26 +107,26 @@ namespace MidProjWPF
             DateTime newDate = editDate.SelectedDate.Value;
             if (((e.Source as Button).Content.ToString()).Contains("Save"))
             {
-                operation.UpdateGame(viewGameTitle.Text, editDate.SelectedDate.Value);
+                _operation.UpdateGame(viewGameTitle.Text, editDate.SelectedDate.Value);
               
                 // RELOAD LIST VIEW WITH UPDATED GAME
                 lvGameSelection.ItemsSource = null;
-                lvGameSelection.ItemsSource = operation.gameFill;
+                lvGameSelection.ItemsSource = _operation.gameFill;
 
             }
             else
             {
                 //If canceled then return to orignal values
-                viewGameTitle.Text = ogTitle;
-                editDate.SelectedDate = ogRelease;
+                viewGameTitle.Text = _ogTitle;
+                editDate.SelectedDate = _ogRelease;
 
             }
 
-            gameEdit = false;
+            _gameEdit = false;
 
             //Show edit button and hide save and cancel
-            inEdit.Visibility = System.Windows.Visibility.Hidden;
-            btnEditGame.Visibility = System.Windows.Visibility.Visible;
+            inEdit.Visibility = Visibility.Hidden;
+            btnEditGame.Visibility = Visibility.Visible;
 
             //Disable editing for date and title
             editDate.Focusable = false;
@@ -155,9 +155,9 @@ namespace MidProjWPF
                                          MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                operation.DeleteGame();
+                _operation.DeleteGame();
                 PopulateGameListView();
-                gameEdit = false;
+                _gameEdit = false;
                 gameGrid.Visibility = Visibility.Hidden;
                 
             }

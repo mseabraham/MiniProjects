@@ -21,18 +21,18 @@ namespace MidProjWPF
     /// </summary>
     public partial class LoginWindow : Window
     {
-        UserCRUD userCRUD;
+        UserCRUD _userCRUD;
         public LoginWindow()
         {
             InitializeComponent();
-            userCRUD = new UserCRUD();
+            _userCRUD = new UserCRUD();
         }
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
             if ((txtUsername.Text != "") && (txtPassword.Password != ""))
             {
-                if ((userCRUD.Login(txtUsername.Text, txtPassword.Password)) is null) 
+                if ((_userCRUD.Login(txtUsername.Text, txtPassword.Password)) is null) 
                 {
                     MessageBoxResult result = MessageBox.Show("Account information was incorrect.\nTry Again!",
                                           "Confirmation",
@@ -47,7 +47,7 @@ namespace MidProjWPF
                 else //Establish admin or user and log in
                 {
                     
-                    if(userCRUD.LoggedIn.IsAdmin is true)
+                    if(_userCRUD.LoggedIn.IsAdmin is true)
                     {
                         MainAdminWindow window = new MainAdminWindow();
                         Application.Current.MainWindow.Close();

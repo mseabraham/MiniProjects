@@ -20,11 +20,11 @@ namespace MidProjWPF
     /// </summary>
     public partial class RegisterWindow : Window
     {
-        UserCRUD userCRUD;
+        private UserCRUD _userCRUD;
         public RegisterWindow()
         {
             InitializeComponent();
-            userCRUD = new UserCRUD();
+            _userCRUD = new UserCRUD();
         }
 
         private void BtnSignUp_Click(object sender, RoutedEventArgs e)
@@ -37,7 +37,7 @@ namespace MidProjWPF
             {
                 if ((txtFName.Text != "") && (txtLName.Text != "") && (txtUsername.Text != "") && (txtPassword.Password != ""))
                 {
-                    userCRUD.CreateUser(txtUsername.Text, txtFName.Text, txtLName.Text, txtPassword.Password, createAdmin);
+                    _userCRUD.CreateUser(txtUsername.Text, txtFName.Text, txtLName.Text, txtPassword.Password, createAdmin);
 
                     MessageBoxResult result = MessageBox.Show("Account Created!",
                                           "Confirmation",

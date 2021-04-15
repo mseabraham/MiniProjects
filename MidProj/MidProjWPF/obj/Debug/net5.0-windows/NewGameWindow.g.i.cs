@@ -113,7 +113,7 @@ namespace MidProjWPF {
             this.btnSave = ((System.Windows.Controls.Button)(target));
             
             #line 29 "..\..\..\NewGameWindow.xaml"
-            this.btnSave.Click += new System.Windows.RoutedEventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.Windows.RoutedEventHandler(this.BtnSave_Click);
             
             #line default
             #line hidden

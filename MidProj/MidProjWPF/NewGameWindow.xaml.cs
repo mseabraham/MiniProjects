@@ -21,15 +21,15 @@ namespace MidProjWPF
     /// </summary>
     public partial class NewGameWindow : Window
     {
-        private GameCRUD operation;
+        private GameCRUD _operation;
         public NewGameWindow()
         {
             InitializeComponent();
-            operation = new GameCRUD();
+            _operation = new GameCRUD();
 
         }
 
-        private void btnSave_Click(object sender, RoutedEventArgs e)
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
             string title = txtTitle.Text;
             DateTime? release = datePicker.SelectedDate;
@@ -47,13 +47,13 @@ namespace MidProjWPF
                     db.SaveChanges();
                 }
 
-                operation.BindGames();
-                btnCancel_Click(sender, e);
+                _operation.BindGames();
+                BtnCancel_Click(sender, e);
             }
 
         }
 
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        private void BtnCancel_Click(object sender, RoutedEventArgs e)
         {
             NewGameWindow newWin = this;
 

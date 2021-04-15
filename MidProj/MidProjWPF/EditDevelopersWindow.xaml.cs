@@ -22,20 +22,20 @@ namespace MidProjWPF
     /// </summary>
     public partial class EditDevelopersWindow : Window
     {
-        private List<Developer> developers;
-        private GameCRUD game;
+        private List<Developer> _developers;
+        private GameCRUD _game;
         public EditDevelopersWindow()
         {
             InitializeComponent();
-            game = new GameCRUD();
+            _game = new GameCRUD();
             PopulateListView();
 
         }
 
         public void PopulateListView()
         { 
-            developers = game.GetDevelopers();
-            lvDevelopers.ItemsSource = developers;
+            _developers = _game.GetDevelopers();
+            lvDevelopers.ItemsSource = _developers;
 
         }
 
@@ -45,9 +45,9 @@ namespace MidProjWPF
             var item = (sender as ListViewItem).DataContext;
             if (item != null)
             {
-                game.SelectedDev = (Developer)item;
-                txtSelectOne.Text = (game.SelectedDev.DeveloperId).ToString();
-                txtSelectTwo.Text = game.SelectedDev.CompanyName;
+                _game.SelectedDev = (Developer)item;
+                txtSelectOne.Text = _game.SelectedDev.DeveloperId.ToString();
+                txtSelectTwo.Text = _game.SelectedDev.CompanyName;
             }
         }
 
@@ -55,7 +55,7 @@ namespace MidProjWPF
         {
             if(txtAddOne.Text is not null)
             {
-                game.CreateDeveloper(txtAddOne.Text);
+                _game.CreateDeveloper(txtAddOne.Text);
                 txtAddOne.Clear();
                 lvDevelopers.ItemsSource = null;
                 PopulateListView();
@@ -70,7 +70,7 @@ namespace MidProjWPF
                                          MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                game.DeleteDeveloper();
+                _game.DeleteDeveloper();
                 txtSelectOne.Clear();
                 txtSelectTwo.Clear();
                 PopulateListView();
